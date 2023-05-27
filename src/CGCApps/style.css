@@ -1,0 +1,50 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.key {
+  font-weight: bold;
+}
+.type {
+  color: blue;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.value {
+  color: red;
+}
+.value.string {
+  color: green;
+}
+.value.NULL,
+.value.null {
+  color: gray;
+}
+.value.array,
+.value.boolean {
+  color: purple;
+}
+div.parent-block {
+  padding-top: 0.325rem;
+}
+div.parent-block.start {
+  cursor: pointer;
+}
+div.parent-block.start.children-collapsed::before {
+  content: '\25BE';
+}
+div.parent-block.start::before {
+  content: '\25B8';
+}
+div.children-block {
+  padding-left: 1rem;
+  border-left: 1px dotted gray;
+  margin-left: 5px;
+}
+div.children-block.collapsed {
+  display: none;
+}
+div.children-block.collapsed::after {
+  content: '...';
+}

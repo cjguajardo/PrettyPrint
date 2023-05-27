@@ -1,0 +1,8 @@
+.cache
+.phpunit.cache
+.vscode
+.prettierrc.json
+composer.lock
+docker-compose.yaml
+vendor
+composer-install.sh
