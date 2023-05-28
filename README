@@ -34,6 +34,8 @@ use CGCApps\PrettyPrint;
 
 $pp = new PrettyPrint();
 $pp->print($data);
+// or
+$pp->printAndDie($data);
 ```
 
 This will print the data in a visually appealing way.
